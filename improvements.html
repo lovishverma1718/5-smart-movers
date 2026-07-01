@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Home Remodeling & Renovations | 5 Smart Movers & Property Services</title>
+    <meta name="description" content="Explore high-end kitchen remodels, custom bathroom restorations, and custom carpentry by master craftsmen. View our before-and-after transformations.">
+    <link rel="stylesheet" href="styles.css?v=2.2">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="canonical" href="https://yourdomain.com/improvements.html" />
+    <!-- JSON-LD Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "5 Smart Movers - Home Remodeling & Renovations",
+      "image": "https://yourdomain.com/edited-photo%20(1).webp",
+      "url": "https://yourdomain.com/improvements.html",
+      "telephone": "+15107553772",
+      "priceRange": "$$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "580 California St, 12th & 16th Floor",
+        "addressLocality": "San Francisco",
+        "addressRegion": "CA",
+        "postalCode": "94104",
+        "addressCountry": "US"
+      },
+      "areaServed": "California"
+    }
+    </script>
+</head>
+<body>
+    <!-- Intro Video Overlay (Plays once per session on first visit) -->
+    <div class="logo-intro-overlay" id="logoIntroOverlay" style="display: none;">
+        <video class="logo-intro-video" id="logoIntroVideo" preload="auto" muted playsinline autoplay disablePictureInPicture controlslist="nodownload nofullscreen noremoteplayback">
+            <source src="logo2.mp4" type="video/mp4">
+        </video>
+        <button class="skip-intro-btn" id="skipIntroBtn" aria-label="Skip Intro">Skip Intro</button>
+    </div>
+    <script>
+        (function() {
+            if (!sessionStorage.getItem('introPlayed')) {
+                var overlay = document.getElementById('logoIntroOverlay');
+                if (overlay) overlay.style.display = 'flex';
+                document.documentElement.classList.add('intro-active');
+            }
+        })();
+    </script>
+
+    <div class="page-transition-overlay active" id="pageTransitionOverlay">
+        <div class="page-transition-logo">5 SMART MOVERS</div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><img src="edited-photo (1).webp" alt="5 Smart Movers & Property Services Logo"></span>
+                <span class="logo-text">5 SMART MOVERS<span class="logo-subtext">Property Services</span></span>
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="moving.html" class="nav-link">Moving</a>
+                <a href="improvements.html" class="nav-link active">Home Remodeling</a>
+                <a href="services.html" class="nav-link">Landscaping</a>
+                <a href="electrician.html" class="nav-link">Electrician</a>
+                <a href="janitorial.html" class="nav-link">Janitorial</a>
+                <a href="index.html#quote-section" class="nav-link mobile-only-nav-link" style="color: var(--color-accent); font-weight: 600;">Get Quote</a>
+            </nav>
+            <div class="header-ctas">
+                <a href="tel:15107553772" class="header-phone">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    <span>(510) 755-3772</span>
+                </a>
+                <a href="index.html#quote-section" class="btn btn-primary">Get Quote</a>
+            </div>
+            <button class="mobile-nav-toggle" aria-label="Toggle menu" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- SECTION 1: HERO SECTION -->
+    <section class="hero-section cinematic-hero" style="height: 85vh;">
+        <div class="hero-video-wrapper">
+            <div class="remodeling-hero-overlay"></div>
+            <img src="assets/handyman-bathroom.webp" class="hero-bg-video ken-burns-active" alt="Luxury Home Remodeling Background" style="object-fit: cover; width: 100%; height: 100%;" loading="lazy">
+        </div>
+        
+        <div class="container hero-container">
+            <div class="hero-text-block">
+                <div class="hero-tag fade-up-init">
+                    <span class="line"></span>
+                    <span>Renovation Portfolio</span>
+                </div>
+                <h1 class="hero-display-title subpage-hero-title fade-up-init delay-1">
+                    Luxury Home Remodeling<br>Crafted Around Your Lifestyle
+                </h1>
+                <p class="hero-subtitle fade-up-init delay-2">
+                    Timeless kitchens, spa-inspired bathrooms, bespoke interiors and transformative living spaces designed to elevate everyday life.
+                </p>
+                <div class="hero-ctas fade-up-init delay-3">
+                    <a href="#consultation" class="btn btn-primary btn-xl">Get a Consultation</a>
+                    <a href="#transformations" class="btn btn-outline btn-xl">View Recent Transformations</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1.5: STATISTICS SECTION -->
+    <section class="stats-strip-section">
+        <div class="container stats-strip-container">
+            <div class="stat-strip-item fade-up-init">
+                <span class="stat-strip-val">300+</span>
+                <span class="stat-strip-lbl">Projects Completed</span>
+            </div>
+            <div class="stat-strip-item fade-up-init delay-1">
+                <span class="stat-strip-val">15+</span>
+                <span class="stat-strip-lbl">Years Experience</span>
+            </div>
+            <div class="stat-strip-item fade-up-init delay-2">
+                <span class="stat-strip-val">98%</span>
+                <span class="stat-strip-lbl">Client Satisfaction</span>
+            </div>
+            <div class="stat-strip-item fade-up-init delay-3">
+                <span class="stat-strip-val">$40M+</span>
+                <span class="stat-strip-lbl">Property Value Added</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: KITCHEN RENOVATION SHOWCASE -->
+    <section id="kitchen" class="statement-chapter section-padding">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 5rem;">
+                <span class="section-tag fade-up-init">Craftsmanship Division</span>
+                <h2 class="editorial-title fade-up-init delay-1" style="font-size: clamp(3rem, 6vw, 5.5rem);">Kitchen Remodeling</h2>
+            </div>
+            
+            <div class="editorial-showcase-grid reverse" style="margin-bottom: 6rem;">
+                <div class="statement-content fade-up-init">
+                    <h3 class="statement-quote" style="font-size: clamp(1.8rem, 3.5vw, 3rem); margin-bottom: 1.5rem;">Custom Culinary Spaces</h3>
+                    <p class="statement-paragraph" style="font-size: 1.15rem; margin-bottom: 2rem;">
+                        We design and craft kitchens that serve as the focal point of the home. Integrating natural Calacatta marble, hidden premium appliances, custom soft-close oak cabinetry, and integrated architectural lighting to maximize both functionality and aesthetic beauty.
+                    </p>
+                    <ul class="package-features">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Custom Cabinetry</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Premium Stone Surfaces</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Architectural Lighting</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Integrated Appliances</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Luxury Fixtures</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="editorial-image-wrapper fade-up-init delay-1">
+                    <span class="editorial-badge">250+ Remodels Delivered</span>
+                    <img src="file_00000000f8f871faadfaf8dcf076fe6d(1).webp" class="parallax-img" alt="Kitchen Showcase Cover" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: BATHROOM RENOVATION SHOWCASE -->
+    <section id="bathroom" class="statement-chapter section-padding bg-beige">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 5rem;">
+                <span class="section-tag fade-up-init">Craftsmanship Division</span>
+                <h2 class="editorial-title fade-up-init delay-1" style="font-size: clamp(3rem, 6vw, 5.5rem);">Bathroom Restorations</h2>
+            </div>
+            
+            <div class="editorial-showcase-grid">
+                <div class="editorial-image-wrapper fade-up-init">
+                    <span class="editorial-badge">Spa retreat</span>
+                    <img src="bathroom main.webp" class="parallax-img" alt="Bathroom Showcase Cover" loading="lazy">
+                </div>
+
+                <div class="statement-content fade-up-init delay-1">
+                    <h3 class="statement-quote" style="font-size: clamp(1.8rem, 3.5vw, 3rem); margin-bottom: 1.5rem;">Estate Wellness Suites</h3>
+                    <p class="statement-paragraph" style="font-size: 1.15rem; margin-bottom: 2rem;">
+                        Transform your bathroom into a luxury retreat. We craft walk-in steam showers, custom-carved stone tubs, brass hardware fixtures, and custom structural vanities that elevate daily wellness.
+                    </p>
+                    <ul class="package-features">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Steam showers and custom glass enclosures</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Custom marble double vanities</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Heated floor and ambient electrical upgrades</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: PROJECT TRANSFORMATIONS & SECTION 5: BEFORE / AFTER GALLERY -->
+    <section id="transformations" class="transformations-section section-padding">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 5rem;">
+                <span class="section-tag fade-up-init">Visual Proof</span>
+                <h2 class="editorial-title fade-up-init delay-1" style="font-size: clamp(3rem, 6vw, 5.5rem);">Before & After</h2>
+                <p class="editorial-subtitle fade-up-init delay-2" style="margin: 1.5rem auto 0 auto;">
+                    Direct visual verification of our architectural craftsmanship. Slide the controls horizontally to view the detail details.
+                </p>
+            </div>
+
+            <div class="transformations-grid">
+                <!-- Kitchen Remodel Slider -->
+                <div class="transformation-card fade-up-init">
+                    <div class="transformation-slider-container">
+                        <div class="slider-image-before">
+                            <img src="kitchen before.webp" alt="Kitchen Before" loading="lazy">
+                            <div class="slider-label slider-label-before">Before</div>
+                        </div>
+                        <div class="slider-image-after">
+                            <img src="kitchen 2.webp" alt="Kitchen After" loading="lazy">
+                            <div class="slider-label slider-label-after">After</div>
+                        </div>
+                        <div class="slider-handle">
+                            <div class="slider-handle-line"></div>
+                            <div class="slider-handle-button">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="15 18 9 12 15 6" />
+                                    <polyline points="9 18 15 12 9 6" />
+                                </svg>
+                            </div>
+                            <div class="slider-handle-line"></div>
+                        </div>
+                        <input type="range" min="0" max="100" value="50" class="slider-range-input" aria-label="Kitchen Remodel Comparison">
+                    </div>
+                    <div class="transformation-info">
+                        <h3>Kitchen Restoration</h3>
+                        <p>Complete structural reconfiguration of a culinary layout, integrating custom quartz slabs and modern cabinet panels.</p>
+                    </div>
+                </div>
+
+                <!-- Bathroom Remodel Slider -->
+                <div class="transformation-card fade-up-init delay-1">
+                    <div class="transformation-slider-container">
+                        <div class="slider-image-before">
+                            <img src="bathroom before.webp" alt="Bathroom Before" loading="lazy">
+                            <div class="slider-label slider-label-before">Before</div>
+                        </div>
+                        <div class="slider-image-after">
+                            <img src="bathroom main.webp" alt="Bathroom After" loading="lazy">
+                            <div class="slider-label slider-label-after">After</div>
+                        </div>
+                        <div class="slider-handle">
+                            <div class="slider-handle-line"></div>
+                            <div class="slider-handle-button">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="15 18 9 12 15 6" />
+                                    <polyline points="9 18 15 12 9 6" />
+                                </svg>
+                            </div>
+                            <div class="slider-handle-line"></div>
+                        </div>
+                        <input type="range" min="0" max="100" value="50" class="slider-range-input" aria-label="Bathroom Restoration Comparison">
+                    </div>
+                    <div class="transformation-info">
+                        <h3>Bathroom Restoration</h3>
+                        <p>Tailored double vanity layouts, premium brass fixtures, walk-in steam shower units, and heated marble flooring systems.</p>
+                    </div>
+                </div>
+
+                <!-- Garage Transformation Slider -->
+                <div class="transformation-card fade-up-init delay-2">
+                    <div class="transformation-slider-container">
+                        <div class="slider-image-before">
+                            <img src="garage before.webp" alt="Garage Before" loading="lazy">
+                            <div class="slider-label slider-label-before">Before</div>
+                        </div>
+                        <div class="slider-image-after">
+                            <img src="garage after.webp" alt="Garage After" loading="lazy">
+                            <div class="slider-label slider-label-after">After</div>
+                        </div>
+                        <div class="slider-handle">
+                            <div class="slider-handle-line"></div>
+                            <div class="slider-handle-button">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="15 18 9 12 15 6" />
+                                    <polyline points="9 18 15 12 9 6" />
+                                </svg>
+                            </div>
+                            <div class="slider-handle-line"></div>
+                        </div>
+                        <input type="range" min="0" max="100" value="50" class="slider-range-input" aria-label="Garage Transformation Comparison">
+                    </div>
+                    <div class="transformation-info">
+                        <h3>Garage Transformation</h3>
+                        <p>Premium lifestyle conversion featuring high-gloss epoxy flooring, modular custom cabinetry, and modern geometric lighting grids.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: EDITORIAL PORTFOLIO (MASONRY GRID) -->
+    <section id="portfolio" class="section-padding bg-beige">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 5rem;">
+                <span class="section-tag fade-up-init">Our Showcase</span>
+                <h2 class="editorial-title fade-up-init delay-1">Remodeling Portfolio</h2>
+                <p class="editorial-subtitle fade-up-init delay-2" style="margin: 1.5rem auto 0 auto;">
+                    A curated archive of California's finest residential renovations, designed by master architects.
+                </p>
+            </div>
+
+            <div class="masonry-portfolio">
+                <!-- Project 1: Atherton Culinary Estate (Kitchen) -->
+                <div class="portfolio-masonry-item fade-up-init">
+                    <img src="new kitchen 1.webp" alt="Atherton Culinary Estate Kitchen" loading="lazy">
+                    <div class="portfolio-masonry-overlay">
+                        <span class="portfolio-masonry-category">Luxury Kitchen</span>
+                        <h3 class="portfolio-masonry-title">Atherton Culinary Estate</h3>
+                    </div>
+                </div>
+
+                <!-- Project 2: Spa Wellness Sanctuary (Bathroom) -->
+                <div class="portfolio-masonry-item fade-up-init delay-1">
+                    <img src="bathroom sanctuary.webp" alt="Wellness Sanctuary Bathroom" loading="lazy">
+                    <div class="portfolio-masonry-overlay">
+                        <span class="portfolio-masonry-category">Spa Bathroom</span>
+                        <h3 class="portfolio-masonry-title">Wellness Sanctuary</h3>
+                    </div>
+                </div>
+
+                <!-- Project 3: Silicon Valley Chef's Suite (Kitchen) -->
+                <div class="portfolio-masonry-item fade-up-init delay-2">
+                    <img src="kitchen remoedlling after.webp" alt="Silicon Valley Chef's Suite Kitchen" loading="lazy">
+                    <div class="portfolio-masonry-overlay">
+                        <span class="portfolio-masonry-category">Luxury Kitchen</span>
+                        <h3 class="portfolio-masonry-title">Silicon Valley Chef's Suite</h3>
+                    </div>
+                </div>
+
+                <!-- Project 4: Pacific Heights Spa Suite (Bathroom) -->
+                <div class="portfolio-masonry-item fade-up-init">
+                    <img src="bathroom main.webp" alt="Pacific Heights Spa Suite Bathroom" loading="lazy">
+                    <div class="portfolio-masonry-overlay">
+                        <span class="portfolio-masonry-category">Spa Bathroom</span>
+                        <h3 class="portfolio-masonry-title">Pacific Heights Spa Suite</h3>
+                    </div>
+                </div>
+
+                <!-- Project 5: High-Gloss Modern Showroom (Garage) -->
+                <div class="portfolio-masonry-item fade-up-init delay-1">
+                    <img src="new garage.webp" alt="High-Gloss Modern Showroom Garage" loading="lazy">
+                    <div class="portfolio-masonry-overlay">
+                        <span class="portfolio-masonry-category">Collector's Garage</span>
+                        <h3 class="portfolio-masonry-title">High-Gloss Modern Showroom</h3>
+                    </div>
+                </div>
+
+                <!-- Project 6: Bel Air Contemporary Kitchen (Kitchen) -->
+                <div class="portfolio-masonry-item fade-up-init delay-2">
+                    <img src="new kitchen 2.webp" alt="Bel Air Contemporary Kitchen" loading="lazy">
+                    <div class="portfolio-masonry-overlay">
+                        <span class="portfolio-masonry-category">Luxury Kitchen</span>
+                        <h3 class="portfolio-masonry-title">Bel Air Contemporary Kitchen</h3>
+                    </div>
+                </div>
+
+                <!-- Project 7: Coastal Stone Retreat (Bathroom) -->
+                <div class="portfolio-masonry-item fade-up-init">
+                    <img src="new bathroom.webp" alt="Coastal Stone Retreat Bathroom" loading="lazy">
+                    <div class="portfolio-masonry-overlay">
+                        <span class="portfolio-masonry-category">Spa Bathroom</span>
+                        <h3 class="portfolio-masonry-title">Coastal Stone Retreat</h3>
+                    </div>
+                </div>
+
+                <!-- Project 8: Minimalist Marble Powder Room (Bathroom) -->
+                <div class="portfolio-masonry-item fade-up-init delay-1">
+                    <img src="bathroom_sanitary.webp" alt="Minimalist Marble Powder Room Bathroom" loading="lazy">
+                    <div class="portfolio-masonry-overlay">
+                        <span class="portfolio-masonry-category">Spa Bathroom</span>
+                        <h3 class="portfolio-masonry-title">Minimalist Marble Powder Room</h3>
+                    </div>
+                </div>
+
+                <!-- Project 9: Premium Detailing Lounge (Garage) -->
+                <div class="portfolio-masonry-item fade-up-init delay-2">
+                    <img src="garage after.webp" alt="Premium Detailing Lounge Garage" loading="lazy">
+                    <div class="portfolio-masonry-overlay">
+                        <span class="portfolio-masonry-category">Collector's Garage</span>
+                        <h3 class="portfolio-masonry-title">Premium Detailing Lounge</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: CLIENT TESTIMONIALS (WARM CREAM GRID) -->
+    <section id="testimonials" class="testimonials-section section-padding">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 5rem;">
+                <span class="section-tag fade-up-init">Client Reviews</span>
+                <h2 class="editorial-title fade-up-init delay-1">Owner Testimonials</h2>
+            </div>
+
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card fade-up-init">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-quote">"They transformed our outdated home into something extraordinary."</p>
+                    <cite class="testimonial-client">Sarah M. <span class="text-accent">— Palo Alto</span></cite>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card fade-up-init delay-1">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-quote">"Exceptional craftsmanship and communication."</p>
+                    <cite class="testimonial-client">David K. <span class="text-accent">— San Jose</span></cite>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card fade-up-init delay-2">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-quote">"Exceeded every expectation from design to delivery."</p>
+                    <cite class="testimonial-client">Michael T. <span class="text-accent">— Fresno</span></cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECTION 8: RENOVATION PROCESS (PREMIUM TIMELINE) -->
+    <section id="process" class="section-padding bg-beige" style="border-top: 1px solid rgba(184, 134, 70, 0.15); border-bottom: 1px solid rgba(184, 134, 70, 0.15);">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 5rem;">
+                <span class="section-tag fade-up-init">Our Methodology</span>
+                <h2 class="editorial-title fade-up-init delay-1">Renovation Process</h2>
+                <p class="editorial-subtitle fade-up-init delay-2" style="margin: 1.5rem auto 0 auto;">
+                    A structured, transparent lifecycle from initial concept blueprint to final clean estate handover.
+                </p>
+            </div>
+
+            <div class="timeline-horizontal-container">
+                <div class="timeline-line-gold">
+                    <div class="timeline-line-gold-fill" id="timelineGoldFill"></div>
+                </div>
+
+                <div class="timeline-horizontal-grid" id="timelineGrid">
+                    <!-- Step 1 -->
+                    <div class="timeline-horizontal-step fade-up-init" id="stepNode1">
+                        <div class="timeline-horizontal-node">01</div>
+                        <h3>Discovery</h3>
+                        <p>Initial design consultation to outline layout opportunities, stylistic goals, and material preferences.</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="timeline-horizontal-step fade-up-init delay-1" id="stepNode2">
+                        <div class="timeline-horizontal-node">02</div>
+                        <h3>Design</h3>
+                        <p>Visualizing custom millwork, selecting stone slabs, and curating architectural lighting models.</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="timeline-horizontal-step fade-up-init delay-2" id="stepNode3">
+                        <div class="timeline-horizontal-node">03</div>
+                        <h3>Planning</h3>
+                        <p>Drafting complete costed structural blueprints, acquiring permits, and scheduling specialized crews.</p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="timeline-horizontal-step fade-up-init" id="stepNode4">
+                        <div class="timeline-horizontal-node">04</div>
+                        <h3>Construction</h3>
+                        <p>Masking adjacent rooms, careful demolition, and precision build out by certified master tradesmen.</p>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="timeline-horizontal-step fade-up-init delay-1" id="stepNode5">
+                        <div class="timeline-horizontal-node">05</div>
+                        <h3>Final Walkthrough</h3>
+                        <p>Complete HEPA micro-dusting, final detailing inspection, and handover of your pristine wellness space.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: CONSULTATION CTA -->
+    <section id="consultation" class="conversion-chapter section-padding bg-beige">
+        <div class="container">
+            <div class="conversion-layout conversion-layout-cta">
+                <div>
+                    <span class="section-tag fade-up-init">Contact Us</span>
+                    <h2 class="editorial-title fade-up-init delay-1" style="font-size: clamp(2.5rem, 5vw, 4.5rem); margin-bottom: 2rem;">Ready to Begin Your Transformation?</h2>
+                    <p class="editorial-subtitle fade-up-init delay-2" style="font-size: 1.15rem; margin-top: 0; margin-bottom: 3rem;">
+                        Connect directly with our renovation directors to book an on-site consultation at your property.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="index.html#quote-section" class="btn btn-primary btn-xl">Request Estimate Form</a>
+                        <a href="tel:15107553772" class="btn btn-outline btn-xl">Call (510) 755-3772</a>
+                    </div>
+                </div>
+                <div class="statement-photo fade-up-init" style="height: 45vh; margin-top: 0;">
+                    <img src="luxury_interior.webp" alt="Luxury Master Suite Interior" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREMIUM FOOTER -->
+    <footer class="luxury-footer">
+        <!-- Top Main Part -->
+        <div class="footer-top-section">
+            <div class="container">
+                <div class="footer-grid-main">
+                    <!-- Brand Column -->
+                    <div class="footer-col-brand">
+                        <div class="footer-logo-monogram">
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <polygon points="50,8 86,29 86,71 50,92 14,71 14,29" stroke="var(--color-accent)" stroke-width="4" fill="none"/>
+                                <text x="50" y="64" font-family="var(--font-heading)" font-size="52" font-weight="normal" fill="var(--color-accent)" text-anchor="middle">S</text>
+                            </svg>
+                        </div>
+                        <h2 class="footer-brand-title">5 SMART MOVERS</h2>
+                        <h3 class="footer-brand-subtitle">PROPERTY SERVICES</h3>
+                        <p class="footer-brand-tagline">Elite Stewardship. Uncompromising Quality.</p>
+                        <p class="footer-brand-desc">
+                            Providing tailored relocations, luxury renovations, landscaping, electrical support, and premium property maintenance for California's finest estates and commercial spaces.
+                        </p>
+                        <div class="footer-brand-ctas">
+                            <a href="index.html#quote-section" class="btn-gold-footer">GET FREE ESTIMATE <span class="arrow">&rarr;</span></a>
+                            <a href="tel:15107553772" class="footer-phone-link">
+                                <span class="phone-icon-circle">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                </span>
+                                <span>(510) 755-3772</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Vertical Divider -->
+                    <div class="footer-vertical-divider"></div>
+
+                    <!-- Discover Column -->
+                    <div class="footer-col-nav">
+                        <h4 class="footer-col-h">DISCOVER</h4>
+                        <ul class="footer-nav-list">
+                            <li><a href="index.html"><span class="nav-arrow">&gt;</span> Home</a></li>
+                            <li><a href="index.html#about-section"><span class="nav-arrow">&gt;</span> About Us</a></li>
+                            <li><a href="services.html"><span class="nav-arrow">&gt;</span> Our Services</a></li>
+                            <li><a href="index.html#projects"><span class="nav-arrow">&gt;</span> Gallery</a></li>
+                            <li><a href="index.html#quote-section"><span class="nav-arrow">&gt;</span> Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Vertical Divider -->
+                    <div class="footer-vertical-divider"></div>
+
+                    <!-- Services Column -->
+                    <div class="footer-col-nav">
+                        <h4 class="footer-col-h">OUR SERVICES</h4>
+                        <ul class="footer-nav-list">
+                            <li><a href="moving.html"><span class="nav-arrow">&gt;</span> Moving Services</a></li>
+                            <li><a href="improvements.html"><span class="nav-arrow">&gt;</span> Home Remodeling</a></li>
+                            <li><a href="services.html"><span class="nav-arrow">&gt;</span> Landscaping</a></li>
+                            <li><a href="electrician.html"><span class="nav-arrow">&gt;</span> Electrician Services</a></li>
+                            <li><a href="janitorial.html"><span class="nav-arrow">&gt;</span> Janitorial Services</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Vertical Divider -->
+                    <div class="footer-vertical-divider"></div>
+
+                    <!-- Contact & Follow Us Column -->
+                    <div class="footer-col-contact">
+                        <h4 class="footer-col-h">CONTACT</h4>
+                        <ul class="footer-contact-details">
+                            <li>
+                                <span class="contact-icon-circle">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </span>
+                                <span>580 California st, 12th & 16th Floor, San Francisco CA 94104</span>
+                            </li>
+                            <li>
+                                <span class="contact-icon-circle">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </span>
+                                <span>info@5smartmovers.com</span>
+                            </li>
+                            <li>
+                                <span class="contact-icon-circle">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                </span>
+                                <span>(510) 755-3772</span>
+                            </li>
+                        </ul>
+
+                        <div class="footer-follow-section">
+                            <h4 class="footer-col-h">FOLLOW US</h4>
+                            <div class="footer-social-icons">
+                                <a href="https://www.instagram.com/5smartmoversinc/" target="_blank" aria-label="Instagram" class="social-icon-instagram">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.facebook.com/5smartmoversinc/" target="_blank" aria-label="Facebook" class="social-icon-facebook">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.tiktok.com/@sanjeevdhewant" target="_blank" aria-label="TikTok" class="social-icon-tiktok">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.linkedin.com/in/kumar-d-a233b656/" target="_blank" aria-label="LinkedIn" class="social-icon-linkedin">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                        <rect x="2" y="9" width="4" height="12"/>
+                                        <circle cx="4" cy="4" r="2"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom section (Trust badges & Meta bar) -->
+        <div class="footer-bottom-section">
+            <div class="container">
+                <!-- Trust Badges Bar -->
+                <div class="footer-trust-badges-bar">
+                    <div class="footer-badge-item">
+                        <span class="badge-icon-shield">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                <polyline points="9 11 11 13 15 9"/>
+                            </svg>
+                        </span>
+                        <div class="badge-texts">
+                            <span class="badge-title">100% SAFE & RELIABLE</span>
+                            <span class="badge-desc">Secure & Reliable Shipping</span>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-badge-divider"></div>
+                    
+                    <div class="footer-badge-item">
+                        <span class="badge-icon-shield">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                <polyline points="9 11 11 13 15 9"/>
+                            </svg>
+                        </span>
+                        <div class="badge-texts">
+                            <span class="badge-title">LICENSED & INSURED</span>
+                            <span class="badge-desc">Your Property, Our Responsibility</span>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-badge-divider"></div>
+                    
+                    <div class="footer-badge-item">
+                        <span class="badge-icon-shield">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                <polyline points="9 11 11 13 15 9"/>
+                            </svg>
+                        </span>
+                        <div class="badge-texts">
+                            <span class="badge-title">ON TIME DELIVERY</span>
+                            <span class="badge-desc">We Value Your Time</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-horizontal-divider"></div>
+
+                <!-- Bottom Meta Bar -->
+                <div class="footer-bottom-bar">
+                    <p>&copy; 2026 5Smart Movers. All rights reserved.</p>
+                    <button class="scroll-to-top-btn" aria-label="Scroll to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="18 15 12 9 6 15"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <!-- GSAP & ScrollTrigger Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="app.js?v=2.2"></script>
+</body>
+</html>

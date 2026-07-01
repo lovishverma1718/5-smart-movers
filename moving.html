@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White-Glove Moving & Relocation Services | 5 Smart Movers & Property Services</title>
+    <meta name="description" content="Experience premium, estate-grade residential and commercial relocations across California. Full-service packing, fine art crating, and dedicated transport.">
+    <link rel="stylesheet" href="styles.css?v=2.2">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="canonical" href="https://yourdomain.com/moving.html" />
+    <!-- JSON-LD Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MovingCompany",
+      "name": "5 Smart Movers - Moving & Relocation Services",
+      "image": "https://yourdomain.com/edited-photo%20(1).webp",
+      "url": "https://yourdomain.com/moving.html",
+      "telephone": "+15107553772",
+      "priceRange": "$$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "580 California St, 12th & 16th Floor",
+        "addressLocality": "San Francisco",
+        "addressRegion": "CA",
+        "postalCode": "94104",
+        "addressCountry": "US"
+      },
+      "areaServed": "California"
+    }
+    </script>
+</head>
+<body>
+    <!-- Intro Video Overlay (Plays once per session on first visit) -->
+    <div class="logo-intro-overlay" id="logoIntroOverlay" style="display: none;">
+        <video class="logo-intro-video" id="logoIntroVideo" preload="auto" muted playsinline autoplay disablePictureInPicture controlslist="nodownload nofullscreen noremoteplayback">
+            <source src="logo2.mp4" type="video/mp4">
+        </video>
+        <button class="skip-intro-btn" id="skipIntroBtn" aria-label="Skip Intro">Skip Intro</button>
+    </div>
+    <script>
+        (function() {
+            if (!sessionStorage.getItem('introPlayed')) {
+                var overlay = document.getElementById('logoIntroOverlay');
+                if (overlay) overlay.style.display = 'flex';
+                document.documentElement.classList.add('intro-active');
+            }
+        })();
+    </script>
+
+    <div class="page-transition-overlay active" id="pageTransitionOverlay">
+        <div class="page-transition-logo">5 SMART MOVERS</div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><img src="edited-photo (1).webp" alt="5 Smart Movers & Property Services Logo"></span>
+                <span class="logo-text">5 SMART MOVERS<span class="logo-subtext">Property Services</span></span>
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="moving.html" class="nav-link active">Moving</a>
+                <a href="improvements.html" class="nav-link">Home Remodeling</a>
+                <a href="services.html" class="nav-link">Landscaping</a>
+                <a href="electrician.html" class="nav-link">Electrician</a>
+                <a href="janitorial.html" class="nav-link">Janitorial</a>
+                <a href="#quote-section" class="nav-link mobile-only-nav-link" style="color: var(--color-accent); font-weight: 600;">Get Quote</a>
+            </nav>
+            <div class="header-ctas">
+                <a href="tel:15107553772" class="header-phone">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    <span>(510) 755-3772</span>
+                </a>
+                <a href="#quote-section" class="btn btn-primary">Get Quote</a>
+            </div>
+            <button class="mobile-nav-toggle" aria-label="Toggle menu" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- SECTION 1: MOVING HERO -->
+    <section class="hero-section cinematic-hero" style="height: 85vh;">
+        <div class="hero-video-wrapper">
+            <div class="hero-overlay"></div>
+            <img src="moving hero section.webp" class="hero-bg-video" alt="Luxury Relocation Transport" style="object-fit: cover; width: 100%; height: 100%;" loading="lazy">
+        </div>
+        
+        <div class="container hero-container">
+            <div class="hero-text-block">
+                <div class="hero-tag fade-up-init">
+                    <span class="line"></span>
+                    <span>Flagship Relocation Services</span>
+                </div>
+                <h1 class="hero-display-title subpage-hero-title fade-up-init delay-1">
+                    WHITE-GLOVE<br> ESTATE RELOCATIONS.
+                </h1>
+                <p class="hero-subtitle fade-up-init delay-2">
+                    Expertly managed residential moves, commercial relocations, and premium packing services for California's distinguished properties.
+                </p>
+                <div class="hero-ctas fade-up-init delay-3">
+                    <a href="#quote-section" class="btn btn-primary btn-xl">Inquire Now</a>
+                    <a href="#residential" class="btn btn-outline btn-xl">Explore Divisions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: RESIDENTIAL MOVING -->
+    <section id="residential" class="statement-chapter section-padding">
+        <div class="container">
+            <div class="statement-grid" style="grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div class="statement-photo fade-up-init" style="height: 55vh;">
+                    <img src="assets/gallery-residential.webp" alt="Luxury Home Relocation Interior" loading="lazy">
+                </div>
+                <div class="statement-content">
+                    <span class="section-tag fade-up-init">Division 01</span>
+                    <h2 class="statement-quote fade-up-init delay-1" style="font-size: clamp(2rem, 4vw, 3.5rem); margin-bottom: 2rem;">
+                        Residential Relocation<br><span class="italic text-accent">For Exclusive Estates</span>
+                    </h2>
+                    <p class="statement-paragraph fade-up-init delay-2" style="font-size: 1.15rem; margin-bottom: 2rem;">
+                        Moving a luxury estate requires absolute precision, planning, and care. Our specialized coordinators catalog your entire household, build custom protective packaging, and manage every step. From coastal Malibu retreats to Silicon Valley estates, we ensure your transition is seamless.
+                    </p>
+                    <ul class="package-features fade-up-init delay-3" style="margin-bottom: 0;">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Dedicated estate spatial coordinators</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Protective wrapping for custom architectural surfaces</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Placement layout mapping and setup</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: COMMERCIAL MOVING -->
+    <section id="commercial" class="statement-chapter section-padding bg-beige">
+        <div class="container">
+            <div class="statement-grid" style="grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div class="statement-content">
+                    <span class="section-tag fade-up-init">Division 02</span>
+                    <h2 class="statement-quote fade-up-init delay-1" style="font-size: clamp(2rem, 4vw, 3.5rem); margin-bottom: 2rem;">
+                        Commercial Logistics<br><span class="italic text-accent">& Office Relocation</span>
+                    </h2>
+                    <p class="statement-paragraph fade-up-init delay-2" style="font-size: 1.15rem; margin-bottom: 2rem;">
+                        Minimizing downtime is our highest priority for corporate client relocations. We specialize in coordinating tech park moves, data room transitions, executive workspace transport, and layout setup. Our crews work weekends and evenings to align perfectly with your business operational needs.
+                    </p>
+                    <ul class="package-features fade-up-init delay-3" style="margin-bottom: 0;">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Fast weekend server room and IT relocations</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Executive office assets and document transport</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Flexible evening and off-hours coordination schedules</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="statement-photo fade-up-init" style="height: 55vh;">
+                    <img src="5 smart mover moving.webp" alt="Luxury Corporate Relocation Tech" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: PACKING SERVICES -->
+    <section id="packing" class="statement-chapter section-padding">
+        <div class="container">
+            <div class="statement-grid" style="grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div class="statement-photo fade-up-init" style="height: 55vh;">
+                    <img src="moving section packaging.webp" alt="Custom Wrapping and Art Packaging" loading="lazy">
+                </div>
+                <div class="statement-content">
+                    <span class="section-tag fade-up-init">Division 03</span>
+                    <h2 class="statement-quote fade-up-init delay-1" style="font-size: clamp(2rem, 4vw, 3.5rem); margin-bottom: 2rem;">
+                        Fine Art Crating<br><span class="italic text-accent">& Packing Services</span>
+                    </h2>
+                    <p class="statement-paragraph fade-up-init delay-2" style="font-size: 1.15rem; margin-bottom: 2rem;">
+                        Delicate museum-grade frames, custom furniture designs, glass assets, and antiquities cannot be wrapped in standard cardboard. We construct custom wood crates on-site, using acid-free custom foam lining to guarantee protection during transit.
+                    </p>
+                    <ul class="package-features fade-up-init delay-3" style="margin-bottom: 0;">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>On-site tailor-made wood crates</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Anti-static, shock-absorbing foam cushions</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Climate-controlled transportation vehicles</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: MOVING PROCESS TIMELINE -->
+    <section class="timeline-chapter section-padding bg-beige">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 5rem;">
+                <span class="section-tag fade-up-init">Our Methodology</span>
+                <h2 class="editorial-title fade-up-init delay-1" style="font-size: clamp(3rem, 6vw, 5.5rem);">Relocation Timeline</h2>
+                <p class="editorial-subtitle fade-up-init delay-2" style="margin: 1.5rem auto 0 auto;">
+                    From the initial consultation to the final box placement, we operate under a transparent, stress-free relocation framework.
+                </p>
+            </div>
+
+            <div class="timeline-layout">
+                <div class="timeline-gold-axis">
+                    <div class="timeline-gold-axis-fill" id="timelineProgressFill"></div>
+                </div>
+
+                <!-- Step 1 -->
+                <div class="timeline-scene">
+                    <div class="timeline-node">I</div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-info">
+                            <span class="section-tag" style="margin-bottom: 0.5rem;">Step 01</span>
+                            <h3>Estate Consultation</h3>
+                            <p>Our relocation managers visit your property to catalog items, evaluate packing requirements (e.g. fine art, glass surfaces), map access logistics, and draft a timeline plan.</p>
+                        </div>
+                        <div class="timeline-card-visual">
+                            <img src="assets/moving-before.webp" alt="Initial Relocation Inspection" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="timeline-scene">
+                    <div class="timeline-node">II</div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-info">
+                            <span class="section-tag" style="margin-bottom: 0.5rem;">Step 02</span>
+                            <h3>Custom Blueprint Planning</h3>
+                            <p>We develop custom blueprints mapping structural routes, packing logistics schedules, cataloging art/antique placements, and preparing transit coordinates.</p>
+                        </div>
+                        <div class="timeline-card-visual">
+                            <img src="assets/gallery-residential.webp" alt="Custom Blueprint Planning" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="timeline-scene">
+                    <div class="timeline-node">III</div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-info">
+                            <span class="section-tag" style="margin-bottom: 0.5rem;">Step 03</span>
+                            <h3>Custom Packing & Crating</h3>
+                            <p>Our crews construct customized wood crates on-site, apply anti-static wraps to tech equipment, and package all high-value antiques and fine art frame sets.</p>
+                        </div>
+                        <div class="timeline-card-visual">
+                            <img src="moving section packaging.webp" alt="On-Site Custom Packing" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="timeline-scene">
+                    <div class="timeline-node">IV</div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-info">
+                            <span class="section-tag" style="margin-bottom: 0.5rem;">Step 04</span>
+                            <h3>Climate-Controlled Transit</h3>
+                            <p>Relocation items are loaded systematically into our specialized climate-controlled fleet, secured with custom harnesses, and tracked live via satellite.</p>
+                        </div>
+                        <div class="timeline-card-visual">
+                            <img src="truck2 hero.webp" alt="Specialized Relocation Truck Fleet" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="timeline-scene">
+                    <div class="timeline-node">V</div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-info">
+                            <span class="section-tag" style="margin-bottom: 0.5rem;">Step 05</span>
+                            <h3>Spatial Blueprint Setup</h3>
+                            <p>We unpack and place all spatial assets and custom furniture according to design blue-prints, carrying away all debris for immediate estate living.</p>
+                        </div>
+                        <div class="timeline-card-visual">
+                            <img src="assets/moving-after.webp" alt="Finished Setup Home Layout" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: BENEFITS SECTION -->
+    <section class="trust-section section-padding">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 5rem;">
+                <span class="section-tag fade-up-init">Our Standards</span>
+                <h2 class="editorial-title fade-up-init delay-1" style="font-size: clamp(3rem, 6vw, 5.5rem);">Relocation Benefits</h2>
+            </div>
+            <div class="trust-grid">
+                <div class="trust-item fade-up-init">
+                    <div class="trust-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="trust-val">Fully Insured</h3>
+                    <p class="trust-lbl">Comprehensive Cover</p>
+                    <p class="trust-desc">Full replacement valuation insurance covers all luxury items, fine art, and home interior elements during packing and transit.</p>
+                </div>
+                <div class="trust-item fade-up-init delay-1">
+                    <div class="trust-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                    <h3 class="trust-val">Vetted Crews</h3>
+                    <p class="trust-lbl">Trusted Professionals</p>
+                    <p class="trust-desc">Our moving specialists are fully employed, background-checked, and trained in white-glove spatial etiquette.</p>
+                </div>
+                <div class="trust-item fade-up-init delay-2">
+                    <div class="trust-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <h3 class="trust-val">On-Time Guarantee</h3>
+                    <p class="trust-lbl">Punctual Schedules</p>
+                    <p class="trust-desc">Strict scheduling coordination ensures we arrive exactly on time and complete operations within set project deadlines.</p>
+                </div>
+                <div class="trust-item fade-up-init delay-3">
+                    <div class="trust-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="1" y="3" width="15" height="13" rx="2" ry="2"/>
+                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                        </svg>
+                    </div>
+                    <h3 class="trust-val">Clean Fleet</h3>
+                    <p class="trust-lbl">Sanitized Vehicles</p>
+                    <p class="trust-desc">All relocation trucks are regularly cleaned and climate-controlled to keep assets safe from dust and heat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: TESTIMONIALS -->
+    <section class="results-chapter section-padding bg-beige">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 5rem;">
+                <span class="section-tag fade-up-init">Client Testimonials</span>
+                <h2 class="editorial-title fade-up-init delay-1" style="font-size: clamp(3rem, 6vw, 5.5rem);">Relocation Stories</h2>
+            </div>
+            
+            <div class="results-grid">
+                <!-- Testimonial 1 -->
+                <div class="result-card fade-up-init">
+                    <div class="result-header">
+                        <span class="result-route">Atherton → Pebble Beach</span>
+                        <span class="result-rating">★★★★★</span>
+                    </div>
+                    <div class="result-specs">
+                        <div class="result-spec-item"><span class="result-spec-lbl">Home Size:</span><span class="result-spec-val">6,200 sq ft Estate</span></div>
+                        <div class="result-spec-item"><span class="result-spec-lbl">Art Crates:</span><span class="result-spec-val">12 Custom Crates</span></div>
+                    </div>
+                    <p class="result-quote">"Moving our home felt like an impossible task, but their team handled our fine-art paintings and antique mirrors with exceptional care. Flawless execution from start to finish."</p>
+                    <cite class="result-client">— DuPont Residence</cite>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="result-card fade-up-init delay-1">
+                    <div class="result-header">
+                        <span class="result-route">San Francisco → San Mateo</span>
+                        <span class="result-rating">★★★★★</span>
+                    </div>
+                    <div class="result-specs">
+                        <div class="result-spec-item"><span class="result-spec-lbl">Home Size:</span><span class="result-spec-val">5,400 sq ft Villa</span></div>
+                        <div class="result-spec-item"><span class="result-spec-lbl">Specialty:</span><span class="result-spec-val">Flat-Rate Relocation</span></div>
+                    </div>
+                    <p class="result-quote">"Recommended by our colleagues, their team exceeded all expectations. They provided a transparent flat-rate estimate, arrived early, packed our entire estate with remarkable speed, and meticulously positioned everything in our new residence."</p>
+                    <cite class="result-client">— M. De Luca, San Mateo</cite>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="result-card fade-up-init delay-2">
+                    <div class="result-header">
+                        <span class="result-route">Palo Alto → Beverly Hills</span>
+                        <span class="result-rating">★★★★★</span>
+                    </div>
+                    <div class="result-specs">
+                        <div class="result-spec-item"><span class="result-spec-lbl">Home Size:</span><span class="result-spec-val">7,500 sq ft Mansion</span></div>
+                        <div class="result-spec-item"><span class="result-spec-lbl">Timeline:</span><span class="result-spec-val">3 Days (Pack & Move)</span></div>
+                    </div>
+                    <p class="result-quote">"They coordinate relocation with the level of precision of a logistics firm, but the client care is warm and personal. We walked in, and everything was ready for us."</p>
+                    <cite class="result-client">— The Vance Family</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: FAQ ACCORDION -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag fade-up-init">Common Questions</span>
+                <h2 class="editorial-title fade-up-init delay-1" style="font-size: clamp(3rem, 6vw, 5.5rem);">Relocation FAQ</h2>
+            </div>
+            
+            <div class="faq-accordion fade-up-init delay-2">
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <button class="faq-trigger">
+                        <span>How far in advance should I book my relocation?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-content">
+                        <p>For large estate relocations, we recommend booking at least 4 to 6 weeks in advance to allow our spatial coordinators to map entryways, build custom wood crates, and coordinate logistics schedules.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <button class="faq-trigger">
+                        <span>Do you build customized wood crates on-site?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-content">
+                        <p>Yes. Our carpenters build custom-fitted wood crates directly on-site to secure high-value art pieces, marble tops, antique frames, and delicate glassware before they are loaded.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <button class="faq-trigger">
+                        <span>What is replacement valuation insurance?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-content">
+                        <p>Replacement valuation coverage is a comprehensive insurance policy where we assume liability for the full value of any items that may get damaged. This goes far beyond standard moving insurance rates.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <button class="faq-trigger">
+                        <span>Do you handle commercial IT equipment?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-content">
+                        <p>Yes. Our commercial moving crews are trained to disconnect, wrap, pack, transport, and reconnect server racks, IT desks, and premium conference assets during off-work hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: MULTI-STEP QUOTE FORM -->
+    <section id="quote-section" class="conversion-chapter section-padding bg-beige">
+        <div class="container">
+            <div class="conversion-layout conversion-layout-quote">
+                <div>
+                    <span class="section-tag fade-up-init">Get An Estimate</span>
+                    <h2 class="editorial-title fade-up-init delay-1" style="font-size: clamp(2.5rem, 5vw, 4.5rem); margin-bottom: 2rem;">Inquire About Your Project</h2>
+                    <p class="editorial-subtitle fade-up-init delay-2" style="font-size: 1.15rem; margin-top: 0;">
+                        Submit your spatial details to receive a personalized estimate calculated for your property's dimensions.
+                    </p>
+                </div>
+
+                <div class="conversion-form-wrapper fade-up-init delay-3" id="quoteModal" style="background: rgba(255, 255, 255, 0.85);">
+                    <div class="form-header-block">
+                        <h3>Service Estimate</h3>
+                        <div class="stepper-indicators">
+                            <span class="step-indicator-node active">1</span>
+                            <span class="step-indicator-node">2</span>
+                            <span class="step-indicator-node">3</span>
+                            <span class="step-indicator-node">4</span>
+                        </div>
+                    </div>
+
+                    <form id="quoteCalculatorForm" class="quote-form-stepper">
+                        <!-- Step 1: Service Type -->
+                        <div class="wizard-panel active" data-step="1">
+                            <div class="form-group-block">
+                                <label>Select Your Required Property Division</label>
+                                <div class="stepper-radio-grid">
+                                    <label class="stepper-radio-label">
+                                        <input type="checkbox" name="serviceType" value="moving" checked>
+                                        <div class="stepper-radio-card">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2" ry="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                                            <span>Moving Services</span>
+                                        </div>
+                                    </label>
+                                    <label class="stepper-radio-label">
+                                        <input type="checkbox" name="serviceType" value="landscaping">
+                                        <div class="stepper-radio-card">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                            <span>Landscaping</span>
+                                        </div>
+                                    </label>
+                                    <label class="stepper-radio-label">
+                                        <input type="checkbox" name="serviceType" value="handyman">
+                                        <div class="stepper-radio-card">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                                            <span>Handyman</span>
+                                        </div>
+                                    </label>
+                                    <label class="stepper-radio-label">
+                                        <input type="checkbox" name="serviceType" value="electrical">
+                                        <div class="stepper-radio-card">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                                            <span>Electrical</span>
+                                        </div>
+                                    </label>
+                                    <label class="stepper-radio-label" style="grid-column: span 2;">
+                                        <input type="checkbox" name="serviceType" value="janitorial">
+                                        <div class="stepper-radio-card">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+                                            <span>Janitorial Care</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Spatial size / Locations -->
+                        <div class="wizard-panel" data-step="2">
+                            <h3 style="margin-bottom: 2rem;" id="step2Title">Relocation Size & Routing</h3>
+                            <div class="form-group-block" id="movingSizeWrapper">
+                                <label for="spaceSize">Approximate Size of Your Space *</label>
+                                <select id="spaceSize" name="spaceSize" class="form-control-select">
+                                    <option value="studio">Studio Apartment</option>
+                                    <option value="1bed">1 Bedroom Residence</option>
+                                    <option value="2bed">2 Bedroom Residence</option>
+                                    <option value="3bed">3 Bedroom Residence</option>
+                                    <option value="4bedplus">4+ Bedroom Estate / Mansion</option>
+                                    <option value="office-small">Office (&lt; 10 desks)</option>
+                                    <option value="office-large">Office (10+ desks)</option>
+                                </select>
+                            </div>
+                            <div class="form-group-block" id="pickupZipWrapper">
+                                <label for="pickupZip" id="pickupZipLabel">Origin Zip Code *</label>
+                                <input type="text" id="pickupZip" name="pickupZip" class="form-control-input" placeholder="e.g. 94103" required pattern="^[0-9]{5}$">
+                            </div>
+                            <div class="form-group-block" id="deliveryZipWrapper">
+                                <label for="deliveryZip">Destination Zip Code *</label>
+                                <input type="text" id="deliveryZip" name="deliveryZip" class="form-control-input" placeholder="e.g. 94301" required pattern="^[0-9]{5}$">
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Date & Flexibility -->
+                        <div class="wizard-panel" data-step="3">
+                            <h3 style="margin-bottom: 2rem;">Timeline & Planning</h3>
+                            <div class="form-group-block">
+                                <label for="moveDate" id="moveDateLabel">Preferred Date *</label>
+                                <input type="date" id="moveDate" name="moveDate" class="form-control-input" required>
+                            </div>
+                            <div class="form-group-block">
+                                <label for="moveFlexibility">Date Flexibility</label>
+                                <select id="moveFlexibility" name="moveFlexibility" class="form-control-select">
+                                    <option value="exact">Exact Date Only</option>
+                                    <option value="plusminus1">+/- 1 Day</option>
+                                    <option value="plusminus3">+/- 3 Days</option>
+                                    <option value="plusminus7">+/- 7 Days</option>
+                                </select>
+                            </div>
+                            <div class="form-group-block">
+                                <label for="specialNeeds" id="specialNeedsLabel">Special Project Parameters or Estate Notes (Optional)</label>
+                                <textarea id="specialNeeds" name="specialNeeds" class="form-control-textarea" rows="3" placeholder="Describe any custom requirements (e.g. art handling, packing details, fragile items, etc.)."></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Step 4: Contact details -->
+                        <div class="wizard-panel" data-step="4">
+                            <h3 style="margin-bottom: 2rem;">Review & Inquire</h3>
+                            <div class="form-group-block">
+                                <label for="fullName">Your Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" class="form-control-input" placeholder="Julia Dupont" required>
+                            </div>
+                            <div class="form-group-block">
+                                <label for="email">E-mail Address *</label>
+                                <input type="email" id="email" name="email" class="form-control-input" placeholder="julia@example.com" required>
+                            </div>
+                            <div class="form-group-block">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" class="form-control-input" placeholder="(510) 555-5555" required>
+                            </div>
+                        </div>
+
+                        <!-- Stepper Footer navigation -->
+                        <div class="wizard-footer-nav">
+                            <button type="button" class="btn btn-outline" id="stepPrevBtn" disabled>Back</button>
+                            <button type="button" class="btn btn-primary" id="stepNextBtn">Continue</button>
+                        </div>
+                    </form>
+
+                    <!-- Success panel -->
+                    <div class="wizard-success-state" id="modalSuccessState">
+                        <div class="success-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                        </div>
+                        <h2>Inquiry Registered</h2>
+                        <p>Our property specialists are calculating your custom service estimate.</p>
+                        
+                        <div class="success-details-summary">
+                            <p><strong>Division:</strong> <span id="summaryMoveType">-</span></p>
+                            <p><strong>Route/Location:</strong> <span id="summaryRoute">-</span></p>
+                            <p><strong>Preferred Date:</strong> <span id="summaryDate">-</span></p>
+                        </div>
+                        
+                        <p class="success-email-note">A confirmation email has been dispatched. We will contact you shortly.</p>
+                        <button type="button" class="btn btn-primary" id="modalCloseFinishBtn" style="margin-top: 1rem;">Finish & Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREMIUM FOOTER -->
+    <footer class="luxury-footer">
+        <!-- Top Main Part -->
+        <div class="footer-top-section">
+            <div class="container">
+                <div class="footer-grid-main">
+                    <!-- Brand Column -->
+                    <div class="footer-col-brand">
+                        <div class="footer-logo-monogram">
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <polygon points="50,8 86,29 86,71 50,92 14,71 14,29" stroke="var(--color-accent)" stroke-width="4" fill="none"/>
+                                <text x="50" y="64" font-family="var(--font-heading)" font-size="52" font-weight="normal" fill="var(--color-accent)" text-anchor="middle">S</text>
+                            </svg>
+                        </div>
+                        <h2 class="footer-brand-title">5 SMART MOVERS</h2>
+                        <h3 class="footer-brand-subtitle">PROPERTY SERVICES</h3>
+                        <p class="footer-brand-tagline">Elite Stewardship. Uncompromising Quality.</p>
+                        <p class="footer-brand-desc">
+                            Providing tailored relocations, luxury renovations, landscaping, electrical support, and premium property maintenance for California's finest estates and commercial spaces.
+                        </p>
+                        <div class="footer-brand-ctas">
+                            <a href="index.html#quote-section" class="btn-gold-footer">GET FREE ESTIMATE <span class="arrow">&rarr;</span></a>
+                            <a href="tel:15107553772" class="footer-phone-link">
+                                <span class="phone-icon-circle">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                </span>
+                                <span>(510) 755-3772</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Vertical Divider -->
+                    <div class="footer-vertical-divider"></div>
+
+                    <!-- Discover Column -->
+                    <div class="footer-col-nav">
+                        <h4 class="footer-col-h">DISCOVER</h4>
+                        <ul class="footer-nav-list">
+                            <li><a href="index.html"><span class="nav-arrow">&gt;</span> Home</a></li>
+                            <li><a href="index.html#about-section"><span class="nav-arrow">&gt;</span> About Us</a></li>
+                            <li><a href="services.html"><span class="nav-arrow">&gt;</span> Our Services</a></li>
+                            <li><a href="index.html#projects"><span class="nav-arrow">&gt;</span> Gallery</a></li>
+                            <li><a href="index.html#quote-section"><span class="nav-arrow">&gt;</span> Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Vertical Divider -->
+                    <div class="footer-vertical-divider"></div>
+
+                    <!-- Services Column -->
+                    <div class="footer-col-nav">
+                        <h4 class="footer-col-h">OUR SERVICES</h4>
+                        <ul class="footer-nav-list">
+                            <li><a href="moving.html"><span class="nav-arrow">&gt;</span> Moving Services</a></li>
+                            <li><a href="improvements.html"><span class="nav-arrow">&gt;</span> Home Remodeling</a></li>
+                            <li><a href="services.html"><span class="nav-arrow">&gt;</span> Landscaping</a></li>
+                            <li><a href="electrician.html"><span class="nav-arrow">&gt;</span> Electrician Services</a></li>
+                            <li><a href="janitorial.html"><span class="nav-arrow">&gt;</span> Janitorial Services</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Vertical Divider -->
+                    <div class="footer-vertical-divider"></div>
+
+                    <!-- Contact & Follow Us Column -->
+                    <div class="footer-col-contact">
+                        <h4 class="footer-col-h">CONTACT</h4>
+                        <ul class="footer-contact-details">
+                            <li>
+                                <span class="contact-icon-circle">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </span>
+                                <span>580 California st, 12th & 16th Floor, San Francisco CA 94104</span>
+                            </li>
+                            <li>
+                                <span class="contact-icon-circle">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </span>
+                                <span>info@5smartmovers.com</span>
+                            </li>
+                            <li>
+                                <span class="contact-icon-circle">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                </span>
+                                <span>(510) 755-3772</span>
+                            </li>
+                        </ul>
+
+                        <div class="footer-follow-section">
+                            <h4 class="footer-col-h">FOLLOW US</h4>
+                            <div class="footer-social-icons">
+                                <a href="https://www.instagram.com/5smartmoversinc/" target="_blank" aria-label="Instagram" class="social-icon-instagram">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.facebook.com/5smartmoversinc/" target="_blank" aria-label="Facebook" class="social-icon-facebook">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.tiktok.com/@sanjeevdhewant" target="_blank" aria-label="TikTok" class="social-icon-tiktok">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.linkedin.com/in/kumar-d-a233b656/" target="_blank" aria-label="LinkedIn" class="social-icon-linkedin">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                        <rect x="2" y="9" width="4" height="12"/>
+                                        <circle cx="4" cy="4" r="2"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom section (Trust badges & Meta bar) -->
+        <div class="footer-bottom-section">
+            <div class="container">
+                <!-- Trust Badges Bar -->
+                <div class="footer-trust-badges-bar">
+                    <div class="footer-badge-item">
+                        <span class="badge-icon-shield">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                <polyline points="9 11 11 13 15 9"/>
+                            </svg>
+                        </span>
+                        <div class="badge-texts">
+                            <span class="badge-title">100% SAFE & RELIABLE</span>
+                            <span class="badge-desc">Secure & Reliable Shipping</span>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-badge-divider"></div>
+                    
+                    <div class="footer-badge-item">
+                        <span class="badge-icon-shield">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                <polyline points="9 11 11 13 15 9"/>
+                            </svg>
+                        </span>
+                        <div class="badge-texts">
+                            <span class="badge-title">LICENSED & INSURED</span>
+                            <span class="badge-desc">Your Property, Our Responsibility</span>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-badge-divider"></div>
+                    
+                    <div class="footer-badge-item">
+                        <span class="badge-icon-shield">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                <polyline points="9 11 11 13 15 9"/>
+                            </svg>
+                        </span>
+                        <div class="badge-texts">
+                            <span class="badge-title">ON TIME DELIVERY</span>
+                            <span class="badge-desc">We Value Your Time</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-horizontal-divider"></div>
+
+                <!-- Bottom Meta Bar -->
+                <div class="footer-bottom-bar">
+                    <p>&copy; 2026 5Smart Movers. All rights reserved.</p>
+                    <button class="scroll-to-top-btn" aria-label="Scroll to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="18 15 12 9 6 15"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <!-- GSAP & ScrollTrigger Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="app.js?v=2.2"></script>
+</body>
+</html>
