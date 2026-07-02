@@ -3801,7 +3801,7 @@ html.intro-active body {
 .logo-intro-video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     /* Laptop layout (centered logo padding) */
 }
 
@@ -3809,7 +3809,7 @@ html.intro-active body {
     .logo-intro-video {
         width: 100%;
         height: 100%;
-        object-fit: cover; /* Mobile layout (fullscreen cover) */
+        object-fit: contain; /* Mobile layout (fullscreen cover) */
     }
 }
 
